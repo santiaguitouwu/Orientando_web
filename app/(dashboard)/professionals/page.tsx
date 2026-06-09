@@ -274,7 +274,7 @@ export default function ProfessionalsPage() {
     {createOpen && (
       <CreateProfessionalModal
         onClose={() => setCreateOpen(false)}
-        onCreated={() => { setCreateOpen(false); fetchProfessionals(1); }}
+        onCreated={() => { setCreateOpen(false); fetchProfessionals(1, search); }}
       />
     )}
 
@@ -282,7 +282,7 @@ export default function ProfessionalsPage() {
       <ProfessionalDetailModal
         professional={selected}
         onClose={() => setSelected(null)}
-        onUpdated={() => { setSelected(null); fetchProfessionals(pagination.page); }}
+        onUpdated={() => { setSelected(null); fetchProfessionals(pagination.page, search); }}
       />
     )}
     </>

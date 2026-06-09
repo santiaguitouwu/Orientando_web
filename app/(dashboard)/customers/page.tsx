@@ -311,7 +311,7 @@ export default function CustomersPage() {
     {createOpen && (
       <CreateClientModal
         onClose={() => setCreateOpen(false)}
-        onCreated={() => { setCreateOpen(false); fetchClients(1); }}
+        onCreated={() => { setCreateOpen(false); fetchClients(1, search); }}
       />
     )}
 
@@ -319,7 +319,7 @@ export default function CustomersPage() {
       <ClientDetailModal
         client={selectedClient}
         onClose={() => setSelectedClient(null)}
-        onUpdated={() => { setSelectedClient(null); fetchClients(pagination.page); }}
+        onUpdated={() => { setSelectedClient(null); fetchClients(pagination.page, search); }}
       />
     )}
     </>

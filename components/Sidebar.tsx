@@ -9,6 +9,7 @@ const navItems = [
   { href: "/chat-audit", icon: "forum", label: "Auditoría de chats" },
   { href: "/professionals", icon: "engineering", label: "Profesionales" },
   { href: "/areas", icon: "map", label: "Áreas y servicios" },
+  { href: "/appointments", icon: "calendar_month", label: "Citas" },
   { href: "/files", icon: "folder", label: "Archivos" },
   { href: "/user-management", icon: "manage_accounts", label: "Usuarios" },
 ];
